@@ -8,7 +8,7 @@ public class App {
 
         QuizAnswer answer = quizPage.getAnswer();
 
-        boolean truth = quizQuestion.checkAnswer(answer);
+        boolean truth = quizQuestion.checkAnswer(answer); // true döndürecek
         quizPage.setTruth(truth);
     }
 }
