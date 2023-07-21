@@ -10,7 +10,7 @@ public class QuizMaker {
     }
 
     public QuizQuestion createQuizQuestion() {
-        int i = (int) Math.random() * quizQuestionary.length;
+        int i = (int) (Math.random() * quizQuestionary.length);
         return quizQuestionary[i];
     }
 }
