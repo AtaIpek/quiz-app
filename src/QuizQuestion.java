@@ -18,4 +18,5 @@ public class QuizQuestion {
     public boolean checkAnswer(String answer) {
         return this.answer.equals(answer);
     }
+
 }
