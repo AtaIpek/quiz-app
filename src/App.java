@@ -1,14 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        QuizMaker quizMaker = new QuizMaker();
-        QuizQuestion quizQuestion = quizMaker.createQuizQuestion();
+        // QuizMaker quizMaker = new QuizMaker();
+        // QuizQuestion quizQuestion = quizMaker.createQuizQuestion();
 
-        QuizPage quizPage = new QuizPage();
-        quizPage.setQuestion(quizQuestion);
+        QuizQuestion quizQuestion = new QuizQuestion("2 + 2 = ?", "4");
 
-        String answer = quizPage.getAnswer();
-
-        boolean truth = quizQuestion.checkAnswer(answer); // true döndürecek
-        quizPage.setTruth(truth);
+        QuizPage quizPage = new QuizPage(quizQuestion);
+        quizPage.show();
     }
 }
