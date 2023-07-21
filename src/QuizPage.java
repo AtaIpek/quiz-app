@@ -19,6 +19,8 @@ public class QuizPage {
         frame.setLayout(null);
         frame.setVisible(true);
 
+        System.out.println("QuizPage constructor called");
+
         button.setBounds(50, 100, 300, 50);
         button.setFont(myFont);
         button.setFocusable(false);
