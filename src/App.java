@@ -10,6 +10,5 @@ public class App {
 
         boolean truth = quizQuestion.checkAnswer(answer); // true döndürecek
         quizPage.setTruth(truth);
-        System.out.println("Hello!");
     }
 }
