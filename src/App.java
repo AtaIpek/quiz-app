@@ -6,7 +6,7 @@ public class App {
         QuizPage quizApp = new QuizPage();
         quizApp.setQuestion(quizQuestion);
 
-        Answer answer = quizApp.getAnswer();
+        QuizAnswer answer = quizApp.getAnswer();
 
         boolean truth = quizQuestion.checkAnswer(answer);
         quizApp.setTruth(truth);
