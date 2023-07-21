@@ -6,7 +6,7 @@ public class App {
         QuizPage quizPage = new QuizPage();
         quizPage.setQuestion(quizQuestion);
 
-        QuizAnswer answer = quizPage.getAnswer();
+        String answer = quizPage.getAnswer();
 
         boolean truth = quizQuestion.checkAnswer(answer); // true döndürecek
         quizPage.setTruth(truth);
