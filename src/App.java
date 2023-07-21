@@ -3,12 +3,12 @@ public class App {
         QuizMaker quizMaker = new QuizMaker();
         QuizQuestion quizQuestion = quizMaker.createQuizQuestion();
 
-        QuizPage quizApp = new QuizPage();
-        quizApp.setQuestion(quizQuestion);
+        QuizPage quizPage = new QuizPage();
+        quizPage.setQuestion(quizQuestion);
 
-        QuizAnswer answer = quizApp.getAnswer();
+        QuizAnswer answer = quizPage.getAnswer();
 
         boolean truth = quizQuestion.checkAnswer(answer);
-        quizApp.setTruth(truth);
+        quizPage.setTruth(truth);
     }
 }
